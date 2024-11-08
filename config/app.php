@@ -108,12 +108,12 @@ return [
      */
 
     'available_locales' => [
-        'ar' => 'Arabic',
+        'rs' => 'Srpski',
         'en' => 'English',
         'es' => 'Español',
         'fa' => 'Persian',
         'tr' => 'Türkçe',
-        'vi' => 'Vietnamese',
+        'ar' => 'Arabic',
     ],
 
     /*
@@ -151,7 +151,7 @@ return [
     |
      */
 
-    'currency' => env('APP_CURRENCY', 'USD'),
+    'currency' => env('APP_CURRENCY', 'EUR'),
 
     /*
     |--------------------------------------------------------------------------
@@ -216,6 +216,8 @@ return [
         Webkul\User\Providers\UserServiceProvider::class,
         Webkul\Warehouse\Providers\WarehouseServiceProvider::class,
         Webkul\WebForm\Providers\WebFormServiceProvider::class,
+        Webkul\Matters\Providers\MattersServiceProvider::class
+
     ])->toArray(),
 
     /*
